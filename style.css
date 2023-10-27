@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.wrap .app {
+  flex: 3;
+  background: #000;
+}
+
+.wrap .tool {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.tool .group_list {
+  overflow-y: auto;
+}
+
+.tool .group_list .group {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.tool .group_list .group .title {
+  font-size: 15px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.group .item_wrap {
+  display: flex;
+  text-align: center;
+}
+
+.group .item_wrap>div {
+  flex: 1;
+  font-size: 12px;
+}
+
+.group .item_wrap .col {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.group .item_wrap p {
+  margin: 5px;
+}
+
+.group .item_wrap .info_btn {
+  padding: 10px 0;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.tool .price{
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.tool .price .next_btn{
+  box-sizing: border-box;
+  font-size: 12px;
+  color:white;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #bb0a30;
+}
